@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Script - Roblox Script Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Upload Script</a></li>
+                <li><a href="#">Create Script</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Upload Script</h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="script-name">Script Name:</label>
+            <input type="text" name="script-name" id="script-name" required>
+
+            <label for="script-file">Script File:</label>
+            <input type="file" name="script-file" id="script-file" required>
+
+            <input type="submit" value="Upload">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Roblox Script Website</p>
+    </footer>
+    <style>
+      /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    color: #fff;
+}
+
+/* Main Styles */
+main {
+    margin: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="file"] {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #0070f3;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #0053a3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+    </style>
+</body>
+</html>
